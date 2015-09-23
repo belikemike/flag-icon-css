@@ -8,13 +8,13 @@ Usage
 -----
 
 For using the flags inline with text add the classes `.flag-icon` and 
-`.flag-icon-xx` (where `xx` is the
-[ISO 3166-1-alpha-2 code](http://www.iso.org/iso/country_names_and_code_elements) 
+`.flag-icon-xxx` (where `xxx` is the
+[ISO 3166-1-alpha-3 code](http://www.iso.org/iso/country_names_and_code_elements) 
 of a country) to an empty `<span>`. If you want to have a squared version flag
 then add the class `flag-icon-squared` as well. Example:
 
-    <span class="flag-icon flag-icon-gr"></span>
-    <span class="flag-icon flag-icon-gr flag-icon-squared"></span>
+    <span class="flag-icon flag-icon-usa"></span>
+    <span class="flag-icon flag-icon-usa flag-icon-squared"></span>
 
 You could also apply this to any element, but in that case you'll have to use the
 `flag-icon-background` instead of `flag-icon` and you're set. This will add the
@@ -28,6 +28,14 @@ Which means that the flag is just going to appear in the middle of an element, s
 you will have to set manually the correct size of 4 by 3 ratio or if it's squared 
 add also the `flag-icon-squared` class.
 
+
+Bower
+-----------
+`bower install flag-icon-css-3`
+
+TODO
+-----------
+Support both 2 digit (ISO 3166-1 alpha-2), and 3 digit (ISO 3166-1 alpha-3) country codes 
 
 Development
 -----------
@@ -49,5 +57,5 @@ To serve it on `localhost:8000`
 
 To have only specific countries in the css file, remove the ones that you don't
 need from the
-[`flag-icon-list.less`](https://github.com/lipis/flag-icon-css/blob/master/less/flag-icon-list.less)
+[`flag-icon-list.less`](https://github.com/belikemike/flag-icon-css/blob/master/less/flag-icon-list.less)
 file and build it again.
